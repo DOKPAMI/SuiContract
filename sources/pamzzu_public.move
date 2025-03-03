@@ -46,7 +46,7 @@ module dokpami::pamzzu_public{
   // }
 
   // public fun new_dokpami_public(mint_count: &mut PamzzuMintCount, name: String, department: String, description: String, img_url: String, ctx: &mut TxContext): PamzzuPublicNFT {
-  //   mint_count.plus_mint_count();
+  //   mint_count.plus_one();
   //   PamzzuPublicNFT {
   //     id: object::new(ctx),
   //     creator: ctx.sender(),
@@ -58,7 +58,7 @@ module dokpami::pamzzu_public{
   //   }
   // }
 
-  // fun plus_mint_count(mint_count: &mut PamzzuMintCount) {
+  // fun plus_one(mint_count: &mut PamzzuMintCount) {
   //   mint_count.minted_number = mint_count.minted_number + 1;
   // }
 

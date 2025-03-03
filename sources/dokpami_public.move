@@ -46,7 +46,7 @@ module dokpami::dokpami_public{
   }
 
   public fun new_dokpami_public(mint_count: &mut DokpamiMintCount, name: String, department: String, description: String, img_url: String, ctx: &mut TxContext): DokpamiPublicNFT {
-    mint_count.plus_mint_count();
+    mint_count.plus_one();
     DokpamiPublicNFT {
       id: object::new(ctx),
       creator: ctx.sender(),
@@ -58,7 +58,7 @@ module dokpami::dokpami_public{
     }
   }
 
-  fun plus_mint_count(mint_count: &mut DokpamiMintCount) {
+  fun plus_one(mint_count: &mut DokpamiMintCount) {
     mint_count.minted_number = mint_count.minted_number + 1;
   }
 
